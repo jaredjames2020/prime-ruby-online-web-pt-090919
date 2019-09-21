@@ -2,12 +2,10 @@ require 'prime'
 
 # Add  code here!
 def prime?(number)
-  (2..(number - 1)).each do |n|  
-end
-
-def is_prime(num)
-
-    return false if num % n == 0
-  end
-  true
+  i = 2
+    while i < number
+      return false if number % i == 0
+      i += 1
+    end
+    true
 end
