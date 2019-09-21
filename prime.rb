@@ -2,11 +2,8 @@ require 'prime'
 
 # Add  code here!
 def prime?(number)
-  i = 2
-  else
-    while i < number
-      return false if number % i == 0
-      i += 1
-    end
-    true
+  (2..(number - 1)).each do |n|
+    return false if number % n == 0
+  end
+  true
 end
